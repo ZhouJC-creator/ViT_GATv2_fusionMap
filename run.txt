@@ -1,0 +1,19 @@
+python train.py --name CUB_LOG --dataset CUB --data_root /home/zjc/project/dataset --model_type ViT-B_16 --pretrained_dir /home/zjc/project/pretrained_models/ViT-B_16.npz --img_size 448 --learning_rate 2e-2 --num_steps 20000 --eval_every 400 --decay_type cosine --weight_decay 5e-5 --seed 222
+python train.py --name AgriculturalDisease_LOG --dataset AgriculturalDisease --data_root /home/zjc/project/dataset --model_type ViT-B_16 --pretrained_dir /home/zjc/project/pretrained_models/ViT-B_16.npz --img_size 448 --learning_rate 2e-2 --num_steps 50000 --eval_every 400 --decay_type cosine --weight_decay 5e-5 --seed 222
+python train.py --name AppleLeaf9_LOG --dataset AppleLeaf9 --data_root /home/zjc/project/dataset --model_type ViT-B_16 --pretrained_dir /home/zjc/project/pretrained_models/ViT-B_16.npz --img_size 448 --learning_rate 2e-2 --num_steps 30000 --eval_every 400 --decay_type cosine --weight_decay 5e-5 --seed 222
+python train.py --name PlantPathology_LOG --dataset PlantPathology --data_root /home/zjc/project/dataset --model_type ViT-B_16 --pretrained_dir /home/zjc/project/pretrained_models/ViT-B_16.npz --img_size 448 --learning_rate 2e-2 --num_steps 50000 --eval_every 400 --decay_type cosine --weight_decay 5e-5 --seed 222
+
+
+python train_new.py --name AgriculturalDisease --dataset AgriculturalDisease --data_root /home/zjc/project/dataset --model_type ViT-B_16 --pretrained_dir /home/zjc/project/pretrained_models/ViT-B_16.npz --img_size 448 --learning_rate 2e-2 --num_epochs 20 --eval_every 400 --decay_type cosine --weight_decay 5e-5 --seed 222
+python train_new.py --name AppleLeaf9 --dataset AppleLeaf9 --data_root /home/zjc/project/dataset --model_type ViT-B_16 --pretrained_dir /home/zjc/project/pretrained_models/ViT-B_16.npz --img_size 448 --learning_rate 2e-2 --num_epochs 20 --decay_type cosine --weight_decay 5e-5 --seed 222
+python train_new.py --name WheatData --dataset WheatData --data_root /home/zjc/project/dataset --model_type ViT-B_16 --pretrained_dir /home/zjc/project/pretrained_models/ViT-B_16.npz --img_size 448 --learning_rate 2e-2 --num_epochs 20 --decay_type cosine --weight_decay 5e-5 --seed 222
+python train_new.py --name PlantPathology --dataset PlantPathology --data_root /home/zjc/project/dataset --model_type ViT-B_16 --pretrained_dir /home/zjc/project/pretrained_models/ViT-B_16.npz --img_size 448 --learning_rate 2e-2 --num_epochs 20 --decay_type cosine --weight_decay 5e-5 --seed 222
+python train_new.py --name CUB --dataset CUB --data_root /home/zjc/project/dataset --model_type ViT-B_16 --pretrained_dir /home/zjc/project/pretrained_models/ViT-B_16.npz --img_size 448 --learning_rate 2e-2 --num_epochs 20 --decay_type cosine --weight_decay 5e-5 --seed 222
+python train_new.py --name RiceLeaf --dataset RiceLeaf --data_root /home/zjc/project/dataset --model_type ViT-B_16 --pretrained_dir /home/zjc/project/pretrained_models/ViT-B_16.npz --img_size 448 --learning_rate 2e-2 --num_epochs 20 --decay_type cosine --weight_decay 5e-5 --seed 222
+
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+
+WheatData: {'Crown and Root Rot': 0, 'Healthy Wheat': 1, 'Leaf Rust': 2, 'Powdery Mildew': 3, 'Wheat Aphids': 4, 'Wheat Loose Smut': 5, 'Wheat Red Spider': 6, 'Wheat Take-all': 7, 'Wheat cyst nematode': 8, 'Wheat scab': 9, 'Wheat stalk rot': 10, 'wheat sharp eyespot': 11}
+
+PlantPathology: {'complex': 0, 'frog_eye_leaf_spot': 1, 'frog_eye_leaf_spot complex': 2, 'healthy': 3, 'powdery_mildew': 4, 'powdery_mildew complex': 5, 'rust': 6, 'rust complex': 7, 'rust frog_eye_leaf_spot': 8, 'scab': 9, 'scab frog_eye_leaf_spot': 10, 'scab frog_eye_leaf_spot complex': 11}
